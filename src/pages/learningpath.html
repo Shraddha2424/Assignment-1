@@ -20,7 +20,7 @@
         integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
     <!-- quill link -->
     <link href="https://cdn.jsdelivr.net/npm/quill/dist/quill.snow.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
     <style>
         .skill-badge {
             background-color: #e9d6fb;
@@ -41,7 +41,8 @@
             margin: 2px;
             display: inline-block;
         }
-        .skill-ad:hover{
+
+        .skill-ad:hover {
             background-color: #6a1b9a;
             color: #e9d6fb;
             padding: 5px 10px;
@@ -50,7 +51,7 @@
             margin: 2px;
             display: inline-block;
 
-         } 
+        }
 
         .action-icon {
             cursor: pointer;
@@ -61,29 +62,33 @@
         .action-icon:hover {
             color: #333;
         }
-        .trashicon1:hover{
-  color: rgb(248, 51, 51);
-  rotate: -20deg;
-}
-/* pagination */
-.pagination a {
-  color: black;
-  float:right;
-  padding: 4px 12px;
-  text-decoration: none;
-  border-radius: 50px;
-  justify-content: end;
-  transition: background-color .3s;
-}
 
-/* Style the active/current link */
-.pagination a.active {
-  background-color: #0745F9;
-  color: white;
-}
+        .trashicon1:hover {
+            color: rgb(248, 51, 51);
+            rotate: -20deg;
+        }
 
-/* Add a grey background color on mouse-over */
-.pagination a:hover:not(.active) {background-color: #ddd;}
+        /* pagination */
+        .pagination a {
+            color: black;
+            float: right;
+            padding: 4px 12px;
+            text-decoration: none;
+            border-radius: 50px;
+            justify-content: end;
+            transition: background-color .3s;
+        }
+
+        /* Style the active/current link */
+        .pagination a.active {
+            background-color: #0745F9;
+            color: white;
+        }
+
+        /* Add a grey background color on mouse-over */
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
     </style>
 </head>
 
@@ -95,7 +100,7 @@
                 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark-subtle ">
                     <div class="container-fluid ">
                         <div class="navbar d-flex justify-content-center">
-                            <img src="../assets/img/talnetlogo.png" alt="" height="35px">
+                            <img src="./assets/img/talnetlogo.png" alt="" height="35px">
                         </div>
                         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -150,10 +155,11 @@
                                         LEARNING PATHS
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="../assets/img/learning.png">Learning Path</a>
+                                        <li><a class="dropdown-item" href="./assets/img/learning.png">Learning Path</a>
                                         </li>
                                         <li><a class="dropdown-item" href="#">Courses</a></li>
-                                        <li><a class="dropdown-item" href="../assets/img/learnpath.png">Skill Sets</a></li>
+                                        <li><a class="dropdown-item" href="./assets/img/learnpath.png">Skill Sets</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -184,7 +190,7 @@
                 <div class="container-fluid w-100 " style="margin-left: 0;">
                     <div class="row p-2 d-flex flex-column" style="height: 100vh; ">
                         <div class="col-md-12 w-100 pt-1" style="height: 60px;">
-                            <img src="../assets/img/talnetlogo.png" class="object-fit-contain p-2  " alt="">
+                            <img src="./assets/img/talnetlogo.png" class="object-fit-contain p-2  " alt="">
                         </div>
                         <div class=" col-md-12 p-0 mt-3">
                             <div class="accordion" id="sidebarMenu">
@@ -195,7 +201,7 @@
                                             data-bs-toggle="collapse" data-bs-target="#teamDropdown1"
                                             aria-expanded="false">
                                             <span class="icon-text color323232" style="font-size: 13px;">
-                                                <img src="../assets/img/dashboard.png" width="20" alt="team-icon">
+                                                <img src="./assets/img/dashboard.png" width="20" alt="team-icon">
                                                 DASHBOARD
                                             </span>
                                         </button>
@@ -205,19 +211,17 @@
                                         <div class="accordion-body ps-5 py-3">
                                             <a href="#" class="d-flex align-items-center mb-2 "
                                                 style="font-size: 14px;">
-                                                <img src="../assets/img/learning.png" height="20px" width="18" alt="team-icon"
-                                                    class="me-2">
+                                                <img src="./assets/img/learning.png" height="20px" width="18"
+                                                    alt="team-icon" class="me-2">
                                                 Learning Path
                                             </a>
-                                            <a href="#" class="d-flex align-items-center mb-2"
-                                                style="font-size: 14px;">
-                                                <img src="../assets/img/client.png" height="20px" width="18" alt="team-icon"
-                                                    class="me-2">
+                                            <a href="#" class="d-flex align-items-center mb-2" style="font-size: 14px;">
+                                                <img src="./assets/img/client.png" height="20px" width="18"
+                                                    alt="team-icon" class="me-2">
                                                 Courses
                                             </a>
-                                            <a href="#" class="d-flex align-items-center"
-                                                style="font-size: 14px;">
-                                                <img src="../assets/img/skillset.png" height="20px" width="18"
+                                            <a href="#" class="d-flex align-items-center" style="font-size: 14px;">
+                                                <img src="./assets/img/skillset.png" height="20px" width="18"
                                                     alt="certification-icon" class="me-2">
                                                 Skill Sets
                                             </a>
@@ -232,7 +236,7 @@
                                             data-bs-toggle="collapse" data-bs-target="#teamDropdown2"
                                             aria-expanded="false">
                                             <span class="icon-text color323232 " style="font-size: 13px;">
-                                                <img src="../assets/img/team_members.png" class="object-fit-contain p-0"
+                                                <img src="./assets/img/team_members.png" class="object-fit-contain p-0"
                                                     width="24px" alt="team-icon">
                                                 TEAM MEMBERS
                                             </span>
@@ -244,13 +248,12 @@
 
                                             <a href="../pages/index.html" class="d-flex align-items-center mb-2"
                                                 style="font-size: 14px;">
-                                                <img src="../assets/img/team_members.png" height="20px" width="18" alt="team-icon"
-                                                    class="me-2">
+                                                <img src="./assets/img/team_members.png" height="20px" width="18"
+                                                    alt="team-icon" class="me-2">
                                                 Team Member
                                             </a>
-                                            <a href="#" class="d-flex align-items-center"
-                                                style="font-size: 14px;">
-                                                <img src="../assets/img/certificate.png" height="20px" width="18"
+                                            <a href="#" class="d-flex align-items-center" style="font-size: 14px;">
+                                                <img src="./assets/img/certificate.png" height="20px" width="18"
                                                     alt="certification-icon" class="me-2">
                                                 Certification
                                             </a>
@@ -264,7 +267,7 @@
                                             data-bs-toggle="collapse" data-bs-target="#teamDropdown3"
                                             aria-expanded="false">
                                             <span class="icon-text color323232" style="font-size: 13px;">
-                                                <img src="../assets/img/project.png" width="20" alt="team-icon">
+                                                <img src="./assets/img/project.png" width="20" alt="team-icon">
                                                 PROJECTS
                                             </span>
                                         </button>
@@ -274,19 +277,17 @@
                                         <div class="accordion-body ps-5 py-3">
                                             <a href="#" class="d-flex align-items-center mb-2 "
                                                 style="font-size: 14px;">
-                                                <img src="../assets/img/learning.png" height="20px" width="18" alt="team-icon"
-                                                    class="me-2">
+                                                <img src="./assets/img/learning.png" height="20px" width="18"
+                                                    alt="team-icon" class="me-2">
                                                 Learning Path
                                             </a>
-                                            <a href="#" class="d-flex align-items-center mb-2"
-                                                style="font-size: 14px;">
-                                                <img src="../assets/img/courses.png" height="20px" width="18" alt="team-icon"
-                                                    class="me-2">
+                                            <a href="#" class="d-flex align-items-center mb-2" style="font-size: 14px;">
+                                                <img src="./assets/img/courses.png" height="20px" width="18"
+                                                    alt="team-icon" class="me-2">
                                                 Courses
                                             </a>
-                                            <a href="#" class="d-flex align-items-center"
-                                                style="font-size: 14px;">
-                                                <img src="../assets/img/skillset.png" height="20px" width="18"
+                                            <a href="#" class="d-flex align-items-center" style="font-size: 14px;">
+                                                <img src="./assets/img/skillset.png" height="20px" width="18"
                                                     alt="certification-icon" class="me-2">
                                                 Skill Sets
                                             </a>
@@ -300,7 +301,7 @@
                                             data-bs-toggle="collapse" data-bs-target="#teamDropdown4"
                                             aria-expanded="false">
                                             <span class="icon-text color323232" style="font-size: 13px;">
-                                                <img src="../assets/img/client.png" width="20" alt="team-icon">
+                                                <img src="./assets/img/client.png" width="20" alt="team-icon">
                                                 CLIENTS
                                             </span>
                                         </button>
@@ -310,19 +311,17 @@
                                         <div class="accordion-body ps-5 py-3">
                                             <a href="#" class="d-flex align-items-center mb-2 "
                                                 style="font-size: 14px;">
-                                                <img src="../assets/img/learning.png" height="20px" width="18" alt="team-icon"
-                                                    class="me-2">
+                                                <img src="./assets/img/learning.png" height="20px" width="18"
+                                                    alt="team-icon" class="me-2">
                                                 Learning Path
                                             </a>
-                                            <a href="#" class="d-flex align-items-center mb-2"
-                                                style="font-size: 14px;">
-                                                <img src="../assets/img/courses.png" height="20px" width="18" alt="team-icon"
-                                                    class="me-2">
+                                            <a href="#" class="d-flex align-items-center mb-2" style="font-size: 14px;">
+                                                <img src="./assets/img/courses.png" height="20px" width="18"
+                                                    alt="team-icon" class="me-2">
                                                 Courses
                                             </a>
-                                            <a href="#" class="d-flex align-items-center"
-                                                style="font-size: 14px;">
-                                                <img src="../assets/img/skillset.png" height="20px" width="18"
+                                            <a href="#" class="d-flex align-items-center" style="font-size: 14px;">
+                                                <img src="./assets/img/skillset.png" height="20px" width="18"
                                                     alt="certification-icon" class="me-2">
                                                 Skill Sets
                                             </a>
@@ -337,7 +336,7 @@
                                             data-bs-toggle="collapse" data-bs-target="#teamDropdown5"
                                             aria-expanded="false">
                                             <span class="icon-text color323232 " style="font-size: 13px;">
-                                                <img src="../assets/img/learning.png" width="18" alt="team-icon">
+                                                <img src="./assets/img/learning.png" width="18" alt="team-icon">
                                                 LEARNING PATHS
                                             </span>
                                         </button>
@@ -347,19 +346,18 @@
                                         <div class="accordion-body ps-5 py-3">
                                             <a href="../pages/learningpath.html" class="d-flex align-items-center mb-2 "
                                                 style="font-size: 14px;">
-                                                <img src="../assets/img/learning.png" height="20px" width="18" alt="team-icon"
-                                                    class="me-2">
+                                                <img src="./assets/img/learning.png" height="20px" width="18"
+                                                    alt="team-icon" class="me-2">
                                                 Learning Path
                                             </a>
-                                            <a href="#" class="d-flex align-items-center mb-2"
-                                                style="font-size: 14px;">
-                                                <img src="../assets/img/courses.png" height="20px" width="18" alt="team-icon"
-                                                    class="me-2">
+                                            <a href="#" class="d-flex align-items-center mb-2" style="font-size: 14px;">
+                                                <img src="./assets/img/courses.png" height="20px" width="18"
+                                                    alt="team-icon" class="me-2">
                                                 Courses
                                             </a>
                                             <a href="../pages/skillset.html" class="d-flex align-items-center"
                                                 style="font-size: 14px;">
-                                                <img src="../assets/img/skillset.png" height="20px" width="18"
+                                                <img src="./assets/img/skillset.png" height="20px" width="18"
                                                     alt="certification-icon" class="me-2">
                                                 Skill Sets
                                             </a>
@@ -403,7 +401,7 @@
                             <div class=" col-md-6 d-none d-lg-block ">
                                 <ul class="list-unstyled d-flex justify-content-end align-items-center mt-2">
                                     <li class="ms-3 p-0">
-                                        <img src="../assets/img/united-states.png" alt="" height="25px" width="25x">
+                                        <img src="./assets/img/united-states.png" alt="" height="25px" width="25x">
                                     </li>
 
                                     <li class="ms-3 p-0">
@@ -425,21 +423,21 @@
 
 
                                     <li class="ms-3 p-0">
-                                        <img src="../assets/img/bell1.png" alt="">
+                                        <img src="./assets/img/bell1.png" alt="">
                                     </li>
                                     <li class="ms-3 p-0">
                                         <!-- <img src="./assets/icons/line.png" height="28px" width="7px" alt=""> -->
                                         |
                                     </li>
                                     <li class="ms-3 p-0">
-                                        <img src="../assets/img/gear.svg" alt="" height="20px" width="20px">
+                                        <img src="./assets/img/gear.svg" alt="" height="20px" width="20px">
                                     </li>
                                     <li class="ms-3 p-0">
                                         <!-- <img src="./assets/icons/line.png" height="28px" width="7px" alt=""> -->
                                         |
                                     </li>
                                     <li class="ms-3 p-0  d-flex">
-                                        <img src="../assets/img/admin2.png" height="30px" width="30px"
+                                        <img src="./assets/img/admin2.png" height="30px" width="30px"
                                             style=" border-radius:5px; margin-top:20px;" alt="">
                                         <div class="profile-text mt-4">
                                             <h6 class="name" style="font-size: 14px; font-weight: bold;">Mehgan Roberts
@@ -485,7 +483,7 @@
                                         <div class=" d-flex justify-content-center align-items-center "
                                             style="height: 100%;">
                                             <div class="image-container">
-                                                <img src="../assets/img/profile1.png" alt="Profile "
+                                                <img src="./assets/img/profile1.png" alt="Profile "
                                                     class="rounded-circle  p-0 text-center img-fluid" height="100%"
                                                     width="100%">
                                                 <div class="overlay">
@@ -498,7 +496,7 @@
                                                 </div>
                                                 <!-- <i
                                                     class="bi bi-camera rounded-circle  iconimg p-2 border border-dark-subtle bg-white"></i> -->
-                                                <img src="../assets/img/camera.svg"
+                                                <img src="./assets/img/camera.svg"
                                                     class="rounded-circle  iconimg p-0 border border-dark-subtle bg-white">
                                             </div>
                                         </div>
@@ -513,12 +511,12 @@
                                         <div class="col-lg-6 pb-3">
                                             <label for="">Courses<span class="text-danger">*</span></label>
                                             <select class=" fontsize form-select colorBABABA" id="customSelect">
-                                                <option value=""  style="color: #303030;">Select Designation</option>
-                                                <option value="1"  style="color: #303030;">Softwear Developer</option>
-                                                <option value="2"  style="color: #303030;">Front-End Developer</option>
-                                                <option value="3"  style="color: #303030;">Back-End Developer</option>
-                                                <option value="4"  style="color: #303030;">UI/UX Designer</option>
-                                                <option value="5"  style="color: #303030;">Full Stack Developer</option>
+                                                <option value="" style="color: #303030;">Select Designation</option>
+                                                <option value="1" style="color: #303030;">Softwear Developer</option>
+                                                <option value="2" style="color: #303030;">Front-End Developer</option>
+                                                <option value="3" style="color: #303030;">Back-End Developer</option>
+                                                <option value="4" style="color: #303030;">UI/UX Designer</option>
+                                                <option value="5" style="color: #303030;">Full Stack Developer</option>
                                             </select>
                                             <!-- <input type="text" class="form-control"> -->
                                         </div>
@@ -554,142 +552,145 @@
                         <!-- courses -->
                         <div class="container mt-4">
                             <div class="col-sm-12 col-md-12 col-lg-12">
-                            <!--description  -->
-                           
-                            <!-- first row -->
-                            <div class="row mt-2">
-                                <div class="col-sm-12 col-md-3 d-flex gap-2">
-                                    <div>
-                                        <img src="../assets/img/webdev.png">
-                                    </div>
+                                <!--description  -->
 
-                                    <div style="margin-left: 15px; gap: 2px;">
-                                        <span style="font-weight: bold;">Web Development</span><br><small
-                                            style="color: #777;">Duration:<img src="../assets/img/timer.png"
-                                                style="margin: 2px; padding-bottom: 4px;"><span
-                                                style=" margin-left:4px; color: rgb(100, 139, 245);">80
-                                                Hrs</span></small>
-                                    </div>
+                                <!-- first row -->
+                                <div class="row mt-2">
+                                    <div class="col-sm-12 col-md-3 d-flex gap-2">
+                                        <div>
+                                            <img src="./assets/img/webdev.png">
+                                        </div>
 
-                                </div>
-                                <div class=" col-sm-12 col-md-12 col-lg-4 gap-2 mt-4">
-                                    <span class="skill-badge">HTML</span>
-                                    <span class="skill-badge">PYTHON</span>
-                                    <span class="skill-badge">CSS</span>
-                                    <span class="skill-badge">JAVA</span>
-                                    <span class="skill-badge">BOOTSTRAP</span>
-                                    <span class="skill-badge">JAVASCRIPT</span>
-                                    <span class="skill-ad border">+2</span>
-                                </div>
-                                <div class=" col-sm-12 col-md-12 col-lg-4">
-                                    <a href="#" target="_blank"
-                                        style="text-decoration: none;font-style: italic;">https://app.intimepro.io/app/main/dashboard</a><br>
-                                    <span style="color: #777;font-size: 14px;">ID: adam.murphy@mail.com<br>
-                                        Password: qwerty123</span>
-                                </div>
-                                <div class="col-md-1"><span class="action-icon"><i class="fa-solid fa-trash trashicon1 fs-5 mt-3" tooltips="Delete"
-                                    style="margin-top: 35px !important;"></i></span></div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-3 d-flex gap-2">
-                                    <div>
-                                        <img src="../assets/img/uidev.png">
-                                    </div>
-                                    <div style="margin-left: 15px;">
-                                        <span style="font-weight:550;">UI Development</span><br><small
-                                            style="color: #777;">Duration:<img src="../assets/img/timer.png"
-                                                style="margin: 2px; padding-bottom: 4px;"><span
-                                                style=" margin-left:4px; color: rgb(100, 139, 245);">85
-                                                Hrs</span></small>
-                                    </div>
-                                </div>
-                                <div class=" col-sm-12 col-md-12 col-lg-4 gap-2 mt-4">
-                                    <span class="skill-badge">HTML</span>
-                                    <span class="skill-badge">PYTHON</span>
-                                    <span class="skill-badge">CSS</span>
-                                    <span class="skill-badge">JAVA</span>
-                                    <span class="skill-ad border">+3</span>
-                                </div>
-                                <div
-                                    class=" col-sm-12 col-md-12 col-lg-4">                                                                                                                                                                                                                                                 
-                                    <a href=" #" target="_blank"
-                                        style="text-decoration: none;font-style: italic">https://sample.edu/day</a><br>
-                                    <span style="color: #777;font-size: 14px;">ID: adam.murphy@mail.com<br>
-                                        Password: qwerty123</span>
-                                </div>
-                                <div class="col-md-1"><span class="action-icon" ><i class="fa-solid fa-trash trashicon1 fs-5 mt-3" tooltips="Delete"
-                                    style="margin-top: 35px !important;"></i></span></div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-3 d-flex gap-2">
-                                    <div>
-                                        <img src="../assets/img/powerbi.png">
-                                    </div>
-                                    <div style="margin-left: 15px;">
-                                        <span style="font-weight:550;">Power BI</span><br><small
-                                            style="color: #777;">Duration:<img src="../assets/img/timer.png"
-                                                style="margin: 2px; padding-bottom: 4px;"><span
-                                                style=" margin-left:4px; color: rgb(100, 139, 245);">65
-                                                Hrs</span></small>
-                                    </div>
-                                </div>
-                                <div class=" col-sm-12 col-md-12 col-lg-4 gap-2 mt-4">
-                                    <span class="skill-badge">HTML</span>
-                                    <span class="skill-badge">PYTHON</span>
-                                    <span class="skill-badge">CSS</span>
-                                    <span class="skill-badge">JAVA</span>
-                                    <span class="skill-ad border">+3</span>
-                                </div>
-                                <div class=" col-sm-12 col-md-12 col-lg-4">
-                                    <a href=" #" target="_blank"
-                                        style="text-decoration: none;font-style: italic">http://www.sample.org/head</a><br>
-                                    <span style="color: #777;font-size: 14px;">ID: adam.murphy@mail.com<br>
-                                        Password: qwerty123</span>
-                                </div>
-                                <div class="col-md-1"><span class="action-icon"><i class="fa-solid fa-trash trashicon1 fs-5 mt-3" tooltips="Delete"
-                                    style="margin-top: 35px !important;"></i></span></div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-3 d-flex gap-2">
-                                    <div>
-                                        <img src="../assets/img/webdev.png">
-                                    </div>
-                                    <div style="margin-left:15px;">
+                                        <div style="margin-left: 15px; gap: 2px;">
+                                            <span style="font-weight: bold;">Web Development</span><br><small
+                                                style="color: #777;">Duration:<img src="./assets/img/timer.png"
+                                                    style="margin: 2px; padding-bottom: 4px;"><span
+                                                    style=" margin-left:4px; color: rgb(100, 139, 245);">80
+                                                    Hrs</span></small>
+                                        </div>
 
-                                        <span style="font-weight:550;">Database</span><br><small
-                                            style="color: #777;">Duration:<img src="../assets/img/timer.png"
-                                                style="margin: 2px; padding-bottom: 4px;"><span
-                                                style=" margin-left:4px; color: rgb(100, 139, 245);">72
-                                                Hrs</span></small>
                                     </div>
+                                    <div class=" col-sm-12 col-md-12 col-lg-4 gap-2 mt-4">
+                                        <span class="skill-badge">HTML</span>
+                                        <span class="skill-badge">PYTHON</span>
+                                        <span class="skill-badge">CSS</span>
+                                        <span class="skill-badge">JAVA</span>
+                                        <span class="skill-badge">BOOTSTRAP</span>
+                                        <span class="skill-badge">JAVASCRIPT</span>
+                                        <span class="skill-ad border">+2</span>
+                                    </div>
+                                    <div class=" col-sm-12 col-md-12 col-lg-4">
+                                        <a href="#" target="_blank"
+                                            style="text-decoration: none;font-style: italic;">https://app.intimepro.io/app/main/dashboard</a><br>
+                                        <span style="color: #777;font-size: 14px;">ID: adam.murphy@mail.com<br>
+                                            Password: qwerty123</span>
+                                    </div>
+                                    <div class="col-md-1"><span class="action-icon"><i
+                                                class="fa-solid fa-trash trashicon1 fs-5 mt-3" tooltips="Delete"
+                                                style="margin-top: 35px !important;"></i></span></div>
                                 </div>
-                                <div class=" col-sm-12 col-md-12 col-lg-4 gap-2 mt-4">
-                                    <span class="skill-badge">CSS</span>
-                                    <span class="skill-badge">JAVA</span>
-                                    <span class="skill-badge">BOOTSTRAP</span>
-                                    <span class="skill-badge">JAVASCRIPT</span>
-                                    <span class="skill-ad border">+2</span>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-3 d-flex gap-2">
+                                        <div>
+                                            <img src="./assets/img/uidev.png">
+                                        </div>
+                                        <div style="margin-left: 15px;">
+                                            <span style="font-weight:550;">UI Development</span><br><small
+                                                style="color: #777;">Duration:<img src="./assets/img/timer.png"
+                                                    style="margin: 2px; padding-bottom: 4px;"><span
+                                                    style=" margin-left:4px; color: rgb(100, 139, 245);">85
+                                                    Hrs</span></small>
+                                        </div>
+                                    </div>
+                                    <div class=" col-sm-12 col-md-12 col-lg-4 gap-2 mt-4">
+                                        <span class="skill-badge">HTML</span>
+                                        <span class="skill-badge">PYTHON</span>
+                                        <span class="skill-badge">CSS</span>
+                                        <span class="skill-badge">JAVA</span>
+                                        <span class="skill-ad border">+3</span>
+                                    </div>
+                                    <div class=" col-sm-12 col-md-12 col-lg-4">
+                                        <a href=" #" target="_blank"
+                                            style="text-decoration: none;font-style: italic">https://sample.edu/day</a><br>
+                                        <span style="color: #777;font-size: 14px;">ID: adam.murphy@mail.com<br>
+                                            Password: qwerty123</span>
+                                    </div>
+                                    <div class="col-md-1"><span class="action-icon"><i
+                                                class="fa-solid fa-trash trashicon1 fs-5 mt-3" tooltips="Delete"
+                                                style="margin-top: 35px !important;"></i></span></div>
                                 </div>
-                                <div class=" col-sm-12 col-md-12 col-lg-4">
-                                    <a href=" #" target="_blank"
-                                        style="text-decoration: none;font-style: italic">http://www.sample.org/head</a><br>
-                                    <span style="color: #777;font-size: 14px;">ID: adam.murphy@mail.com<br>
-                                        Password: qwerty123</span>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-3 d-flex gap-2">
+                                        <div>
+                                            <img src="./assets/img/powerbi.png">
+                                        </div>
+                                        <div style="margin-left: 15px;">
+                                            <span style="font-weight:550;">Power BI</span><br><small
+                                                style="color: #777;">Duration:<img src="./assets/img/timer.png"
+                                                    style="margin: 2px; padding-bottom: 4px;"><span
+                                                    style=" margin-left:4px; color: rgb(100, 139, 245);">65
+                                                    Hrs</span></small>
+                                        </div>
+                                    </div>
+                                    <div class=" col-sm-12 col-md-12 col-lg-4 gap-2 mt-4">
+                                        <span class="skill-badge">HTML</span>
+                                        <span class="skill-badge">PYTHON</span>
+                                        <span class="skill-badge">CSS</span>
+                                        <span class="skill-badge">JAVA</span>
+                                        <span class="skill-ad border">+3</span>
+                                    </div>
+                                    <div class=" col-sm-12 col-md-12 col-lg-4">
+                                        <a href=" #" target="_blank"
+                                            style="text-decoration: none;font-style: italic">http://www.sample.org/head</a><br>
+                                        <span style="color: #777;font-size: 14px;">ID: adam.murphy@mail.com<br>
+                                            Password: qwerty123</span>
+                                    </div>
+                                    <div class="col-md-1"><span class="action-icon"><i
+                                                class="fa-solid fa-trash trashicon1 fs-5 mt-3" tooltips="Delete"
+                                                style="margin-top: 35px !important;"></i></span></div>
                                 </div>
-                                <div class="col-md-1"><span class="action-icon"><i class="fa-solid fa-trash trashicon1 fs-5 mt-3" tooltips="Delete"
-                                    style="margin-top: 35px !important;"></i></span></div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-3 d-flex gap-2">
+                                        <div>
+                                            <img src="./assets/img/webdev.png">
+                                        </div>
+                                        <div style="margin-left:15px;">
+
+                                            <span style="font-weight:550;">Database</span><br><small
+                                                style="color: #777;">Duration:<img src="./assets/img/timer.png"
+                                                    style="margin: 2px; padding-bottom: 4px;"><span
+                                                    style=" margin-left:4px; color: rgb(100, 139, 245);">72
+                                                    Hrs</span></small>
+                                        </div>
+                                    </div>
+                                    <div class=" col-sm-12 col-md-12 col-lg-4 gap-2 mt-4">
+                                        <span class="skill-badge">CSS</span>
+                                        <span class="skill-badge">JAVA</span>
+                                        <span class="skill-badge">BOOTSTRAP</span>
+                                        <span class="skill-badge">JAVASCRIPT</span>
+                                        <span class="skill-ad border">+2</span>
+                                    </div>
+                                    <div class=" col-sm-12 col-md-12 col-lg-4">
+                                        <a href=" #" target="_blank"
+                                            style="text-decoration: none;font-style: italic">http://www.sample.org/head</a><br>
+                                        <span style="color: #777;font-size: 14px;">ID: adam.murphy@mail.com<br>
+                                            Password: qwerty123</span>
+                                    </div>
+                                    <div class="col-md-1"><span class="action-icon"><i
+                                                class="fa-solid fa-trash trashicon1 fs-5 mt-3" tooltips="Delete"
+                                                style="margin-top: 35px !important;"></i></span></div>
+                                </div>
                             </div>
                         </div>
+
+
+                        <!-- empty div -->
+                        <div class="h-50 mt-5">
+
                         </div>
-
-
-<!-- empty div -->
- <div class="h-50 mt-5">
-
- </div>
 
 
 
@@ -703,7 +704,7 @@
                             <a href="#">5</a>
                             <a href="#">6</a>
                             <a href="#">&raquo;</a>
-                          </div>
+                        </div>
 
 
 
